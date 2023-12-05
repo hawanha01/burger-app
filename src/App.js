@@ -27,13 +27,23 @@ function App() {
     )
   }
 
+  const resetState = () => {
+    setItems([
+      {id:1,name:'lettuce',quantity:0,price:3},
+      {id:2,name:'bacon',quantity:0,price:5},
+      {id:3,name:'cheese',quantity:0,price:4},
+      {id:4,name:'meat',quantity:0,price:6}
+    ])
+  }
   return (
     <div className="App">
       <MyNavbar/>
       <div className="BurgerBody">
-        <Burger/>
+        <Burger items={items}/>
       </div>
-      <Footer items={items} increaseItem={increaseItem} decreaseItem={decreaseItem}/>
+      <div className="footerBody">
+        <Footer items={items} increaseItem={increaseItem} decreaseItem={decreaseItem} resetState={()=>resetState()}/>
+      </div>
     </div>
   );
 }

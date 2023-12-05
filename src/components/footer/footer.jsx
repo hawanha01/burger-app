@@ -3,7 +3,7 @@ import './footer.css';
 import Menu from "./Menu/menu";
 const BUN_PRICE = 3;
 
-function Footer({items,increaseItem,decreaseItem}) {
+function Footer({items,increaseItem,decreaseItem, resetState}) {
   const [price,setPrice] = useState()
   const handlePriceChange=(price)=>{
     setPrice(price)
@@ -17,7 +17,7 @@ function Footer({items,increaseItem,decreaseItem}) {
         <Menu handlePrice={handlePriceChange} increase={increaseItem} decrease={decreaseItem} items={items} bunPrice={BUN_PRICE}/>
       </div>
       <div className="SignUp">
-        <button>SIGN UP TO ORDER</button>
+        <button onClick={resetState}>Place Order</button>
       </div>
     </div>
   );
