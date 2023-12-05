@@ -6,3 +6,8 @@
   height: 500px;
   margin: 5% auto;
 }
+.footerBody{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
