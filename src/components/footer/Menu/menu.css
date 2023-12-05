@@ -1,0 +1,8 @@
+.Menu{
+  text-align: center;
+  margin: 1% auto;
+}
+.MenuItem{
+  display: flex;
+  justify-content: center;
+}
