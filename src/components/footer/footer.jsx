@@ -1,26 +1,25 @@
-import React, { useState } from "react";
-import './footer.css';
-import Menu from "./Menu/menu";
-const BUN_PRICE = 3;
+import React from 'react'
+import './footer.css'
+import Menu from './Menu/menu'
+import { useDispatch, useSelector } from 'react-redux'
+import { resetState } from '../../state/item/itemSlice'
 
-function Footer({items,increaseItem,decreaseItem, resetState}) {
-  const [price,setPrice] = useState()
-  const handlePriceChange=(price)=>{
-    setPrice(price)
-  }
+const Footer = () => {
+  const dispatch = useDispatch()
+  const totalPrice = useSelector(state => state.totalPrice.totalPrice)
   return (
     <div className="Footer">
       <div className="PriceTag">
-        <p>Current Price:{price}</p>
+        <p>Current Price:{totalPrice}</p>
       </div>
       <div className="MenuTag">
-        <Menu handlePrice={handlePriceChange} increase={increaseItem} decrease={decreaseItem} items={items} bunPrice={BUN_PRICE}/>
+        <Menu/>
       </div>
       <div className="SignUp">
-        <button onClick={resetState}>Place Order</button>
+        <button onClick={() => dispatch(resetState())}>Place Order</button>
       </div>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

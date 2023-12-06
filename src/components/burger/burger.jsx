@@ -6,8 +6,10 @@ import Meat from './ingredients/meat'
 import Lettuce from './ingredients/lettuce'
 import Cheese from './ingredients/cheese'
 import './burger.css'
+import { useSelector } from 'react-redux'
 
-const Burger = ({ items }) => {
+const Burger = () => {
+  const items = useSelector(state => state.items.items)
   return (
     <div className="Burger">
       <UpperBun />
