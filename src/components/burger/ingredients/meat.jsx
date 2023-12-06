@@ -1,10 +1,10 @@
-import React from "react";
-import './ingredients.css';
+import React from 'react'
+import './ingredients.css'
 
-function Meat() {
+const Meat = () => {
   return (
     <div className="Meat"></div>
-  );
+  )
 }
 
-export default Meat;
+export default Meat

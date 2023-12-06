@@ -1,10 +1,10 @@
-import React from "react";
-import './ingredients.css';
+import React from 'react'
+import './ingredients.css'
 
-function Cheese() {
+const Cheese = () => {
   return (
     <div className="Cheese"></div>
-  );
+  )
 }
 
-export default Cheese;
+export default Cheese

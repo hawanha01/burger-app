@@ -1,10 +1,10 @@
-import React from "react";
-import './ingredients.css';
+import React from 'react'
+import './ingredients.css'
 
-function UpperBun() {
+const UpperBun = () => {
   return (
     <div className="UpperBun"></div>
-  );
+  )
 }
 
-export default UpperBun;
+export default UpperBun

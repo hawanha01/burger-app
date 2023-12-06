@@ -1,10 +1,10 @@
-import React from "react";
-import './ingredients.css';
+import React from 'react'
+import './ingredients.css'
 
-function Lettuce() {
+const Lettuce = () => {
   return (
     <div className="Lettuce"></div>
-  );
+  )
 }
 
-export default Lettuce;
+export default Lettuce

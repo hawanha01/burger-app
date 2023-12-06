@@ -1,13 +1,13 @@
-import React from "react";
-import UpperBun from "./ingredients/upper_bun";
-import LowerBun from "./ingredients/lower_bun";
-import Bacon from './ingredients/bacon';
-import Meat from "./ingredients/meat";
-import Lettuce from "./ingredients/lettuce";
-import Cheese from "./ingredients/cheese";
-import './burger.css';
+import React from 'react'
+import UpperBun from './ingredients/upper_bun'
+import LowerBun from './ingredients/lower_bun'
+import Bacon from './ingredients/bacon'
+import Meat from './ingredients/meat'
+import Lettuce from './ingredients/lettuce'
+import Cheese from './ingredients/cheese'
+import './burger.css'
 
-function Burger({ items }) {
+const Burger = ({ items }) => {
   return (
     <div className="Burger">
       <UpperBun />
@@ -18,22 +18,22 @@ function Burger({ items }) {
       ))}
       <LowerBun />
     </div>
-  );
+  )
 }
 
 const Ingredient = ({ type }) => {
   switch (type) {
     case 'lettuce':
-      return <Lettuce />;
+      return <Lettuce />
     case 'bacon':
-      return <Bacon />;
+      return <Bacon />
     case 'cheese':
-      return <Cheese />;
+      return <Cheese />
     case 'meat':
-      return <Meat />;
+      return <Meat />
     default:
-      return null;
+      return null
   }
-};
+}
 
-export default Burger;
+export default Burger

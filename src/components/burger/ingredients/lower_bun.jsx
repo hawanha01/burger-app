@@ -1,10 +1,10 @@
-import React from "react";
-import './ingredients.css';
+import React from 'react'
+import './ingredients.css'
 
-function LowerBun() {
+const LowerBun = () => {
   return (
     <div className="LowerBun"></div>
-  );
+  )
 }
 
-export default LowerBun;
+export default LowerBun
