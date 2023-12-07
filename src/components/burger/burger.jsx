@@ -11,11 +11,11 @@ import { useSelector } from 'react-redux'
 const Burger = () => {
   const items = useSelector(state => state.items.items)
   return (
-    <div className="Burger">
+    <div className='Burger'>
       <UpperBun />
       {items.map((item) => (
-        Array.from({ length: item.quantity }).map((_, index) => (
-          <Ingredient key={item.id + index} type={item.name} />
+        Array.from({ length: item.quantity }).map(() => (
+          <Ingredient key={item.id} type={item.name} />
         ))
       ))}
       <LowerBun />

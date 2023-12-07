@@ -5,12 +5,12 @@ import Footer from './components/footer/footer'
 import MyNavbar from './components/navbar/navbar'
 const App = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <MyNavbar />
-      <div className="BurgerBody">
+      <div className='BurgerBody'>
         <Burger />
       </div>
-      <div className="footerBody">
+      <div className='footerBody'>
         <Footer/>
       </div>
     </div>

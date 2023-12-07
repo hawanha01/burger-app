@@ -3,7 +3,7 @@ import './ingredients.css'
 
 const Meat = () => {
   return (
-    <div className="Meat"></div>
+    <div className='Meat'></div>
   )
 }
 

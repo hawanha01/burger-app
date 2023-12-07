@@ -3,7 +3,7 @@ import './ingredients.css'
 
 const LowerBun = () => {
   return (
-    <div className="LowerBun"></div>
+    <div className='LowerBun'></div>
   )
 }
 

@@ -13,12 +13,12 @@ const itemSlice = createSlice({
   name: 'items',
   initialState,
   reducers: {
-    IncrementIngredient: (state, action) => {
+    incrementIngredient: (state, action) => {
       state.items = state.items.map((item) =>
         item.id === action.payload.id ? { ...item, quantity: item.quantity + 1 } : item
       )
     },
-    DecrementIngredient: (state, action) => {
+    decrementIngredient: (state, action) => {
       state.items = state.items.map((item) =>
         item.id === action.payload.id && item.quantity > 0 ? { ...item, quantity: item.quantity - 1 } : item
       )
@@ -34,5 +34,4 @@ const itemSlice = createSlice({
   }
 })
 
-export const { IncrementIngredient, DecrementIngredient, resetState } = itemSlice.actions
 export default itemSlice

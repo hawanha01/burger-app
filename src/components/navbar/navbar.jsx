@@ -4,16 +4,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import './navbar.css'
 function MyNavbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="custome-navbar">
+    <Navbar collapseOnSelect expand='lg' className='custome-navbar'>
       <Container>
-        <Navbar.Brand href="#home"><img src="../../public/assets/media/burger.jpg" alt="myBurger"/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Brand href='#home'><img src='../../public/assets/media/burger.jpg' alt='myBurger'/></Navbar.Brand>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar.Collapse id='responsive-navbar-nav'>
+          <Nav className='me-auto'>
           </Nav>
           <Nav>
-            <Nav.Link href="#burger_builder">Burger Builder</Nav.Link>
-            <Nav.Link eventKey={2} href="#Login">
+            <Nav.Link href='#burger_builder'>Burger Builder</Nav.Link>
+            <Nav.Link eventKey={2} href='#Login'>
               Login
             </Nav.Link>
           </Nav>

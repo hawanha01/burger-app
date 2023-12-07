@@ -14,5 +14,4 @@ const priceSlice = createSlice({
   }
 })
 
-export const { updateTotalPrice } = priceSlice.actions
 export default priceSlice
