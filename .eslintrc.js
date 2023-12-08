@@ -27,6 +27,6 @@ module.exports = {
     'react/jsx-no-useless-fragment': 'error',
     'react/no-array-index-key': 'error',
     'react/react-in-jsx-scope': 0,
-    'react/prop-types': ['error', { ignore: ['type','item'] }]
+    'react/prop-types': ['error', { ignore: ['type','item', 'children'] }]
   }
 }
