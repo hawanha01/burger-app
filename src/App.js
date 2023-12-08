@@ -2,18 +2,19 @@ import React from 'react'
 import './App.css'
 import Burger from './components/burger/burger'
 import Footer from './components/footer/footer'
-import MyNavbar from './components/navbar/navbar'
+import Layout from './layout'
 const App = () => {
   return (
-    <div className='App'>
-      <MyNavbar />
-      <div className='BurgerBody'>
-        <Burger />
+    <Layout>
+      <div className='App'>
+        <div className='BurgerBody'>
+          <Burger />
+        </div>
+        <div className='footerBody'>
+          <Footer/>
+        </div>
       </div>
-      <div className='footerBody'>
-        <Footer/>
-      </div>
-    </div>
+    </Layout>
   )
 }
 
