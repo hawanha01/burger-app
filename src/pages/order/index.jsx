@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 
 const Order = () => {
   const orders = useSelector(state=>state.orders.orders)
+  const user = useSelector(state=>state.user.user)
+  const filtered_orders = orders.filter(order => order.user_id === user.id);
   return (
     <Layout>
       <div>
-        {orders.map(order => {
+        {filtered_orders.map(order => {
           return (
             <div key={order.id}>
               <Link to={`/orders/${order.id}`}>Order NO # {order.id}</Link>

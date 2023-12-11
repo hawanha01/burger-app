@@ -1,4 +1,4 @@
-import MyNavbar from "./components/navbar/navbar"
+import MyNavbar from "./components/navbar"
 
 const Layout = ({ children }) => {
   return(

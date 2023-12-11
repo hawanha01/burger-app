@@ -19,7 +19,7 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-duplicate-imports': 'off',
-    'no-magic-numbers': ['error', { ignore: [-1, 0, 1, 2,3,4,5,6, 100] }],
+    'no-magic-numbers': ['error', { ignore: [-1, 0, 1, 2,3,4,5,6,25, 100] }],
     'no-undef': 'off',
     'prefer-arrow-callback': 0,
     'prefer-const': 0,

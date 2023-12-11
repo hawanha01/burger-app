@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
-import Burger from './components/burger/burger'
-import Footer from './components/footer/footer'
+import Burger from './components/burger'
+import Footer from './components/footer'
 import Layout from './layout'
 const App = () => {
   return (

@@ -1,0 +1,7 @@
+.loginWrapper{
+  text-align: center;
+  margin: 10rem 25%;
+  width: 50%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  padding: 1rem;
+}
