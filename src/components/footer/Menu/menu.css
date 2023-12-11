@@ -1,8 +1,15 @@
 .Menu{
   text-align: center;
   margin: 1% auto;
+  width: 25%;
 }
 .MenuItem{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.item{
+  flex: 1;
+  text-align: start;
+  margin: 0.5rem;
 }

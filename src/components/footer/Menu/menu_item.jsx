@@ -12,9 +12,9 @@ const MenuItem = ({ item }) => {
   })
   return (
     <div className='MenuItem'>
-      <div><strong>{item.name}</strong></div>
-      <div><button onClick={() => dispatch(decrementIngredient(item))}>Less</button></div>
-      <div><button onClick={() => dispatch(incrementIngredient(item))}>More</button></div>
+      <div className='item'><strong>{item.name}</strong></div>
+      <div className='item'><button onClick={() => dispatch(decrementIngredient(item))}>Less</button></div>
+      <div className='item'><button onClick={() => dispatch(incrementIngredient(item))}>More</button></div>
     </div>
   )
 }
