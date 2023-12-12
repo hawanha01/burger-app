@@ -4,8 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/burger.jpg";
-import { useSelector } from "react-redux";
-import Logout from "../logout";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from "../../actions/LoginActions";
 
 function MyNavbar() {
   const user = useSelector((state) => state.user.user);
@@ -41,6 +41,8 @@ function MyNavbar() {
       window.location == "http://localhost:3000/" ? "4px solid #40a4c8" : "",
   };
 
+  const dispatch = useDispatch();
+
   return (
     <Navbar collapseOnSelect expand="lg" className="custome-navbar">
       <Container>
@@ -64,7 +66,14 @@ function MyNavbar() {
                 Login
               </Link>
             ) : (
-              <Logout className="Link" style={baseStyle} />
+              <Link
+                className="Link"
+                style={baseStyle}
+                onClick={() => dispatch(logoutUser())}
+              >
+                {" "}
+                logout{" "}
+              </Link>
             )}
           </Nav>
         </Navbar.Collapse>
