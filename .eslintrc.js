@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'jsx-quotes': [2, 'prefer-single'],
+    'jsx-quotes': [2, 'prefer-double'],
     'max-lines': ['error', { max: 200, skipBlankLines: true }],
     'no-alert': 'error',
     'no-console': 'warn',

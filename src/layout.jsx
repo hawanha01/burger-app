@@ -1,12 +1,12 @@
-import MyNavbar from "./components/navbar"
+import MyNavbar from "./components/navbar";
 
 const Layout = ({ children }) => {
-  return(
+  return (
     <>
-      <MyNavbar/>
+      <MyNavbar />
       {children}
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

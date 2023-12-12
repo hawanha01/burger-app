@@ -1,17 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  totalPrice: 3
-}
+  totalPrice: 3,
+};
 
 const priceSlice = createSlice({
-  name: 'price',
+  name: "price",
   initialState,
   reducers: {
-    updateTotalPrice: (state,action) => {
-      state.totalPrice = action.payload.items.reduce((sum, item) => (sum + item.quantity * item.price), 3)
-    }
-  }
-})
+    updateTotalPrice: (state, action) => {
+      state.totalPrice = action.payload.items.reduce(
+        (sum, item) => sum + item.quantity * item.price,
+        3
+      );
+    },
+  },
+});
 
-export default priceSlice
+export default priceSlice;

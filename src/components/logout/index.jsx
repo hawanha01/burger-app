@@ -1,12 +1,14 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
-import { logoutUser } from '../../actions/LoginActions'
+import React from "react";
+import { useDispatch } from "react-redux";
+import { logoutUser } from "../../actions/LoginActions";
 
 const Logout = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   return (
-    <div style={{color: 'white'}} onClick={() => dispatch(logoutUser())}>logout</div>
-  )
-}
+    <div style={{ color: "white" }} onClick={() => dispatch(logoutUser())}>
+      logout
+    </div>
+  );
+};
 
-export default Logout
+export default Logout;

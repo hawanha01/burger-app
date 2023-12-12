@@ -1,10 +1,8 @@
-import React from 'react'
-import './ingredients.css'
+import React from "react";
+import "./ingredients.css";
 
 const Cheese = () => {
-  return (
-    <div className='Cheese'></div>
-  )
-}
+  return <div className="Cheese"></div>;
+};
 
-export default Cheese
+export default Cheese;

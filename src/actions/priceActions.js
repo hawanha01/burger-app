@@ -1,3 +1,3 @@
-import { createAction } from '@reduxjs/toolkit';
+import { createAction } from "@reduxjs/toolkit";
 
-export const updateTotalPrice = createAction('price/updateTotalPrice');
+export const updateTotalPrice = createAction("price/updateTotalPrice");

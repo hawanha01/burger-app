@@ -1,12 +1,14 @@
-.Footer{
+.Footer {
     text-align: center;
     width: 100%;
     background-color: #cf8f2e;
     margin-bottom: 0px;
 }
-.PriceTag{
+
+.PriceTag {
     text-align: center;
 }
-.MenuTag{
+
+.MenuTag {
     text-align: center;
 }

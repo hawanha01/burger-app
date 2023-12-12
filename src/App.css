@@ -1,12 +1,14 @@
 .App {
   text-align: center;
 }
-.BurgerBody{
+
+.BurgerBody {
   width: 50%;
   height: 500px;
   margin: 5% auto;
 }
-.footerBody{
+
+.footerBody {
   position: fixed;
   bottom: 0;
   width: 100%;

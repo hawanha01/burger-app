@@ -1,11 +1,13 @@
-.custome-navbar{
+.custome-navbar {
   background-color: #703b09;
 }
-.navTitle{
+
+.navTitle {
   height: 2rem;
   width: 2rem;
 }
-.navTitleWrapper{
+
+.navTitleWrapper {
   background-color: white;
   padding: 0.25rem;
   border-radius: 0.15rem;

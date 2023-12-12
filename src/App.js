@@ -1,21 +1,21 @@
-import React from 'react'
-import './App.css'
-import Burger from './components/burger'
-import Footer from './components/footer'
-import Layout from './layout'
+import React from "react";
+import "./App.css";
+import Burger from "./components/burger";
+import Footer from "./components/footer";
+import Layout from "./layout";
 const App = () => {
   return (
     <Layout>
-      <div className='App'>
-        <div className='BurgerBody'>
+      <div className="App">
+        <div className="BurgerBody">
           <Burger />
         </div>
-        <div className='footerBody'>
-          <Footer/>
+        <div className="footerBody">
+          <Footer />
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default App
+export default App;
