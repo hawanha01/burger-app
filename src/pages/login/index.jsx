@@ -36,7 +36,6 @@ const Login = () => {
             );
           dispatch(loginUser(user()));
         })
-        .catch((error) => console.error(error));
       action.resetForm();
     },
   });

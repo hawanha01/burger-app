@@ -35,8 +35,5 @@ jobs:
     steps:
       - name: Deploy to Docker
         run: |
-          # Build Docker image
-          docker build -t your-image-name .
-
-          # Run Docker container using Docker Compose
+          docker build -t my-burger-app .
           docker-compose up -d
